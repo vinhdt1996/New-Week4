@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/kayak_sans_regular</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="capfale" parent="TextAppearance.Design.Tab">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="NavigationText">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+    <!--Rounded button in Sign in-->
+    <style name="RoundedButtonSignUp" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/button_empty_rounded_corners</item>
+    </style>
+
+    <style name="RoundedButtonEdit" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/button_trans_rounded_corners</item>
+    </style>
+
+    <style name="RoundedButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/button_bg_rounded_corners</item>
+    </style>
+    <!--Divider-->
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+</resources>

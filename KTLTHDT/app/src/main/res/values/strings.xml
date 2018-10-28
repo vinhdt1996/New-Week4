@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">KTLTHDT</string>
+    <string name="google_map_api_key">AIzaSyBm_Xmwd6M7L8n8pgRXLgEY2QnN4xmOC1c</string>
+    <string name="facebook_app_id">183917345840614</string>
+    <string name="fb_login_protocol_scheme">fb183917345840614</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="home">Home</string>
+    <string name="logout">Log out</string>
+    <string name="settings">Settings</string>
+    <string name="notification">Notifications</string>
+    <string name="favorite">Favorite</string>
+    <string name="review">Review</string>
+
+
+    <!--Sign up Log in-->
+    <string name="full_name"><font size="16">Full name</font></string>
+    <string name="email"><font size="16">Email address</font></string>
+    <string name="phone_number"><font size="16">Phone number</font></string>
+    <string name="password"><font size="16">Password</font></string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="log_in">LOG IN</string>
+
+
+    <!--Input Location-->
+    <string name="edit_origin">Origin Location</string>
+    <string name="edit_destination">Destination Location</string>
+
+    <!--Button for RouteFragment-->
+    <string name="btn_cancel">CANCEL</string>
+    <string name="btn_find">FIND</string>
+
+    <!--String for hint-->
+    <string name="edit_hint_origin"><font size="16">Origin Location</font></string>
+    <string name="edit_hint_destination"><font size="16">Destination Location</font></string>
+
+
+    <string name="welcome">Best Trip</string>
+    <string name="description">Best trip with us</string>
+
+    <string name="check_out">CHECK OUT</string>
+</resources>

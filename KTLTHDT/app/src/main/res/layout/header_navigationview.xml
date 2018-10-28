@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/background_gradient_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="65dp"
+        android:id="@+id/imgHeader"
+        android:src="@drawable/avatar_placeholder"
+        android:layout_height="65dp" />
+
+    <TextView
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/nameHeader"
+        app:layout_constraintLeft_toLeftOf="@id/imgHeader"
+        app:layout_constraintTop_toBottomOf="@id/imgHeader"
+        android:text="Login now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/nameHeader"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/emailHeader"
+        app:layout_constraintTop_toBottomOf="@+id/nameHeader"
+        android:text="Guest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>

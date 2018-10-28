@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerlayoutTaxi"
+    tools:context=".taxi.TaxiActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/toolbarTaxi"
+            android:theme="@style/ToolBarStyle"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbarTaxi">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardview"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="16sp"
+                            android:id="@+id/txtYourLoctaxi"
+
+                            android:drawablePadding="20dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:drawableLeft="@drawable/loc_on"
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="15dp"
+                            android:background="@drawable/top_corner_no_stroke"
+                            android:text="Your current location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textSize="16sp"
+                            android:id="@+id/txtDestaxi"
+                            android:paddingTop="15dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingBottom="20dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:drawablePadding="20dp"
+                            android:hint="Input your destination address"
+                            android:drawableLeft="@drawable/destination_on"
+                            android:padding="20dp"
+                            app:layout_constraintTop_toBottomOf="@id/txtYourLoctaxi"
+                            android:background="@drawable/bot_corner_no_stroke"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </android.support.constraint.ConstraintLayout>
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/txt4seaters"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+
+                    android:text="4 Seaters Economy Taxi"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cardview" />
+
+                <FrameLayout
+                    android:id="@+id/frame1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintLeft_toLeftOf="@id/txt4seaters"
+                    app:layout_constraintRight_toRightOf="@id/txt4seaters"
+                    app:layout_constraintTop_toBottomOf="@+id/txt4seaters"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ProgressBar
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <android.support.v7.widget.RecyclerView
+                        android:nestedScrollingEnabled="false"
+                        android:id="@+id/recycler4seaters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never"
+                        >
+                    </android.support.v7.widget.RecyclerView>
+                </FrameLayout>
+
+
+                <ImageButton
+                    android:id="@+id/btnViewall4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/next_button"
+                    app:layout_constraintRight_toRightOf="@id/frame1"
+                    app:layout_constraintTop_toBottomOf="@id/frame1" />
+
+                <TextView
+                    android:id="@+id/txtViewall4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:text="View all"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@id/btnViewall4"
+                    app:layout_constraintRight_toLeftOf="@id/btnViewall4"
+                    app:layout_constraintTop_toBottomOf="@id/frame1"
+                    app:layout_constraintTop_toTopOf="@id/btnViewall4" />
+
+                <TextView
+                    android:id="@+id/txt7seaters"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="7 Seaters Economy Taxi"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="@id/txt4seaters"
+                    app:layout_constraintRight_toRightOf="@id/txt4seaters"
+                    app:layout_constraintTop_toBottomOf="@id/btnViewall4" />
+
+                <FrameLayout
+                    android:id="@+id/frame2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintLeft_toLeftOf="@id/txt4seaters"
+                    app:layout_constraintRight_toRightOf="@id/txt4seaters"
+                    app:layout_constraintTop_toBottomOf="@+id/txt7seaters"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ProgressBar
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <android.support.v7.widget.RecyclerView
+                        android:nestedScrollingEnabled="false"
+                        android:id="@+id/recycler7seaters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never"></android.support.v7.widget.RecyclerView>
+                </FrameLayout>
+
+
+                <ImageButton
+                    android:id="@+id/btnViewall7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/next_button"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="@id/frame2"
+                    app:layout_constraintTop_toBottomOf="@+id/frame2" />
+
+                <TextView
+                    android:id="@+id/txtViewall7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:text="View all"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@id/btnViewall7"
+                    app:layout_constraintRight_toLeftOf="@id/btnViewall7"
+                    app:layout_constraintTop_toTopOf="@id/btnViewall7" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+    <android.support.design.widget.NavigationView
+        app:headerLayout="@layout/header_navigationview"
+        android:id="@+id/navigationTaxi"
+        app:menu="@menu/menu_navigation"
+        android:theme="@style/NavigationText"
+        android:layout_gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:text="My Taxi v1.0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

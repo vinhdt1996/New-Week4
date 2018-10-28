@@ -1,4 +1,4 @@
-?# Project 4 -  New-Week4
+# Project 4 -  New-Week4
 
 **New-Week4** is an android app that allows a user to search the destination, view the Trip information and call taxi. 
 Time spent: **72** hours spent in total

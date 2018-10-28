@@ -1,7 +1,7 @@
-?# Project 4 -  Best-Trip
+?# Project 4 -  New-Week4
 
-**Best-Trip** is an android app that allows a user to search the destination, view the Trip information and call taxi. 
-Time spent: **69** hours spent in total
+**New-Week4** is an android app that allows a user to search the destination, view the Trip information and call taxi. 
+Time spent: **72** hours spent in total
 
 ## User Stories
 
